@@ -6,15 +6,26 @@ while read _ file; do
   frontmatter=$(echo "$filecontent" | awk -v RS='---' 'NR==2{print}')
   draft=$(echo "$frontmatter" | awk '/^draft: /{print $2}')
   if [ "$draft" = "false" ]; then
-    echo "$file modDateTime updated"
-    cat $file | sed "/---.*/,/---.*/s/^modDatetime:.*$/modDatetime: $(date -u "+%Y-%m-%dT%H:%M:%SZ")/" > tmp
-    mv tmp $file
-    git add $file
+    # 检查文件中是否已存在 modDatetime 字段
+    if grep -q "^modDatetime:" "$file"; then
+      # 更新现有的 modDatetime
+      cat "$file" | sed "/---.*/,/---.*/s/^modDatetime:.*$/modDatetime: $(date -u "+%Y-%m-%dT%H:%M:%SZ")/" > tmp
+      mv tmp "$file"
+      git add "$file"
+      echo "$file modDateTime updated"
+    else
+      # 在 frontmatter 中添加新的 modDatetime 字段
+      # 在 pubDatetime 行之后插入 modDatetime
+      cat "$file" | sed "/---.*/,/---.*/s/^\(pubDatetime:.*\)$/\1\nmodDatetime: $(date -u "+%Y-%m-%dT%H:%M:%SZ")/" > tmp
+      mv tmp "$file"
+      git add "$file"
+      echo "$file modDateTime added"
+    fi
   fi
   if [ "$draft" = "first" ]; then
     echo "First release of $file, draft set to false and modDateTime removed"
-    cat $file | sed "/---.*/,/---.*/s/^modDatetime:.*$/modDatetime:/" | sed "/---.*/,/---.*/s/^draft:.*$/draft: false/" > tmp
-    mv tmp $file
-    git add $file
+    cat "$file" | sed "/---.*/,/---.*/s/^modDatetime:.*$/modDatetime:/" | sed "/---.*/,/---.*/s/^draft:.*$/draft: false/" > tmp
+    mv tmp "$file"
+    git add "$file"
   fi
 done
