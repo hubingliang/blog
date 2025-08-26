@@ -11,7 +11,8 @@
     "format:check": "prettier --check .",
     "format": "prettier --write .",
     "lint": "eslint .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "new-post": "./scripts/create-post.sh"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.12",
