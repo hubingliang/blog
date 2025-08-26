@@ -1,8 +1,7 @@
 ---
 author: Brian Hu
 pubDatetime: 2025-08-26T00:00:00.000Z
-modDatetime: 2025-08-26T09:36:28Z
-modDateTime: 2025-08-26T00:00:00.000Z
+modDatetime: 2025-08-26T09:36:47Z
 title: 五十音汉语对照
 featured: true
 draft: false
