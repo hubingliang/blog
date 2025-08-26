@@ -1,8 +1,8 @@
 ---
 author: Brian Hu
-pubDatetime: 2025-08-26T09:08:53.000Z
+pubDatetime: 2025-08-26T00:00:00.000Z
 title: 五十音汉语对照
-featured: false
+featured: true
 draft: false
 tags:
   - Japanese
