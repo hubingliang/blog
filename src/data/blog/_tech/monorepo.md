@@ -8,7 +8,7 @@ draft: false
 tags:
   - Monorepo
   - Front-end
-ogImage: ""
+ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1675680883/blog/BVuVT66Vb1YHIbLy1KG75I9jgzaasxxE6oDlWtJ7L6Yz_ltj8ii.png"
 description: 现在谈 Monorepo 或许有些晚了，作为历史可以追溯到 2000 年初的技术思想，它已经经过多次的迭代优化，衍生出了很多优秀的框架和工具。不过对于前端在近几年工程的日益复杂化，Monorepo 在前端领域或许可以降低一定的项目复杂度。
 ---
 

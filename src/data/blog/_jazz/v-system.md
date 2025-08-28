@@ -1,14 +1,14 @@
 ---
 author: Brian Hu
 pubDatetime: 2025-08-26T00:00:00.000Z
-title: V System
+title: V System by Ted Greene
 featured: true
 draft: false
 tags:
   - Jazz
   - Guitar
   - Chord
-ogImage: ""
+ogImage: "@/assets/images/v-system/Exploring-Arrangements-of-the-late-great-Ted-Greene.jpg"
 description: V-System 是由 Ted Greene 创立的革命性吉他和弦组织系统。它主要关注 四音和弦，并旨在帮助吉他手系统化地理解和掌握这些和弦，而不是随机记忆大量和弦。
 ---
 

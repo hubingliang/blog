@@ -1,5 +1,5 @@
 ---
-author: Flâneur
+author: Brian Hu
 pubDatetime: 2023-04-13T9:07:20Z
 title: 代理模式：部署可升级智能合约的关键
 postSlug: upgradeable-smart-contract
@@ -9,7 +9,7 @@ tags:
   - Solidity
   - OpenZeppelin
   - ERC
-ogImage: ""
+ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1681376143/blog/canary/asdawdwwwwdsZdazc_iydvdh.png"
 description: 智能合约部署后无法修改，若出现 bug 或需要添加新功能，只能重新部署新合约、迁移数据、更新相关合约地址并说服社区使用新合约。为了解决这个问题，需要一个方便的解决方案，允许在不丢失数据的情况下更改合约代码。
 ---
 

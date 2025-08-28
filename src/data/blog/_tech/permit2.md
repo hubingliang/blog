@@ -1,5 +1,5 @@
 ---
-author: Flâneur
+author: Brian Hu
 pubDatetime: 2023-03-27T8:52:10Z
 title: Uniswap Permit2：下一代以太坊授权机制，低开销、安全且通用
 postSlug: permit2
@@ -9,7 +9,7 @@ tags:
   - Solidity
   - Uniswap
   - EIP
-ogImage: ""
+ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1679901132/blog/canary/%E6%97%A0%E6%A0%87%E9%A2%98-2023-03-27-1504_biwerw.png"
 description: 本文对以太坊授权机制做简单解析。
 ---
 

@@ -1,0 +1,179 @@
+---
+import { getCollection } from "astro:content";
+import Main from "@/layouts/Main.astro";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Card from "@/components/Card.astro";
+import getSortedPosts from "@/utils/getSortedPosts";
+import { SITE } from "@/config";
+
+const posts = await getCollection("blog", ({ data }) => !data.draft);
+const sortedPosts = getSortedPosts(posts);
+---
+
+<Layout title={`Posts | ${SITE.title}`}>
+  <Header />
+  <Main pageTitle="Posts" pageDesc="All the articles I've posted.">
+    <ul
+      id="posts-grid"
+      class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+    >
+      {
+        sortedPosts.map((data, index) => (
+          <div class={`post-item ${index >= SITE.postPerPage ? "hidden" : ""}`}>
+            <Card {...data} />
+          </div>
+        ))
+      }
+    </ul>
+
+    {
+      sortedPosts.length > SITE.postPerPage && (
+        <div id="loading-container" class="mt-8 text-center">
+          <div id="loading-indicator" class="hidden">
+            <div class="inline-flex items-center text-accent">
+              <svg
+                class="mr-3 -ml-1 h-5 w-5 animate-spin"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  class="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="4"
+                />
+                <path
+                  class="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                />
+              </svg>
+              Loading more posts...
+            </div>
+          </div>
+
+          <div
+            id="load-complete"
+            class="text-skin-base hidden text-sm opacity-60"
+          >
+            All posts loaded
+          </div>
+        </div>
+      )
+    }
+  </Main>
+
+  <Footer />
+</Layout>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    // 无限滚动功能
+    const loadingIndicator = document.getElementById("loading-indicator");
+    const loadComplete = document.getElementById("load-complete");
+    const postItems = document.querySelectorAll(".post-item");
+    let currentlyVisible = 4; // 初始显示数量
+    const loadIncrement = 6; // 每次加载数量
+    let isLoading = false; // 防止重复加载
+
+    // 加载更多文章的函数
+    function loadMorePosts() {
+      if (isLoading || currentlyVisible >= postItems.length) {
+        return;
+      }
+
+      isLoading = true;
+
+      // 显示加载指示器
+      if (loadingIndicator) {
+        loadingIndicator.classList.remove("hidden");
+      }
+
+      // 模拟加载延迟，提供更好的用户体验
+      setTimeout(() => {
+        const toShow = Math.min(
+          currentlyVisible + loadIncrement,
+          postItems.length
+        );
+
+        // 显示新文章
+        for (let i = currentlyVisible; i < toShow; i++) {
+          const item = postItems[i] as HTMLElement;
+          if (item) {
+            item.classList.remove("hidden");
+            // 添加淡入动画
+            item.style.opacity = "0";
+            item.style.transform = "translateY(20px)";
+
+            setTimeout(
+              () => {
+                item.style.transition = "all 0.3s ease-out";
+                item.style.opacity = "1";
+                item.style.transform = "translateY(0)";
+              },
+              (i - currentlyVisible) * 50
+            ); // 错开动画时间
+          }
+        }
+
+        currentlyVisible = toShow;
+
+        // 隐藏加载指示器
+        if (loadingIndicator) {
+          loadingIndicator.classList.add("hidden");
+        }
+
+        // 检查是否还有更多文章
+        if (currentlyVisible >= postItems.length) {
+          if (loadComplete) {
+            loadComplete.classList.remove("hidden");
+          }
+        }
+
+        isLoading = false;
+      }, 500); // 500ms 延迟
+    }
+
+    // 滚动事件监听器
+    function handleScroll() {
+      // 检查是否滚动到接近底部（距离底部200px）
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      if (scrollTop + windowHeight >= documentHeight - 200) {
+        loadMorePosts();
+      }
+    }
+
+    // 节流函数，避免频繁触发
+    let scrollTimeout: number;
+    function throttledScroll() {
+      if (scrollTimeout) {
+        return;
+      }
+
+      scrollTimeout = window.setTimeout(() => {
+        handleScroll();
+        scrollTimeout = 0;
+      }, 100);
+    }
+
+    // 添加滚动事件监听器
+    window.addEventListener("scroll", throttledScroll);
+
+    // 页面卸载时移除事件监听器
+    return () => {
+      window.removeEventListener("scroll", throttledScroll);
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+    };
+  });
+</script>

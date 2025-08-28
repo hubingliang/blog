@@ -8,7 +8,7 @@ draft: false
 tags:
   - CSS
   - Front-end
-ogImage: ""
+ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1675676126/blog/4337988-bc2b886890d0962a.png_f3slaw.png"
 description: 随着移动互联网的兴起，Web app的开发也越来越重要，与此同时页面布局也成了一个令人头痛的问题。rem的出现貌似可以完美解决移动端适配的问题。
 ---
 

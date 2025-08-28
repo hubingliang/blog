@@ -8,8 +8,8 @@ draft: false
 tags:
   - Jazz
   - Chord
-ogImage: ""
-description: ""
+ogImage: "@/data/blog/_jazz/geert-pieters-8QrPJ3Kfie4-unsplash.jpg"
+description: 简单来说，Backdoor Dominant Chord 是一种用降七级属七和弦 (♭VII7) 来替代五级属七和弦 (V7) 的和声手法。
 ---
 
 ## 什么是 Backdoor Progression？

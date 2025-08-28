@@ -2,13 +2,13 @@
 author: Brian Hu
 pubDatetime: 2025-08-26T00:00:00.000Z
 modDatetime: 2025-08-26T09:45:32Z
-title: 五十音汉语对照
+title: 五十音汉语联想记忆
 featured: true
 draft: false
 tags:
   - Japanese
-ogImage: ""
-description: 五十音对照
+ogImage: "@/assets/images/flyd-jBnWCd_9764-unsplash.jpg"
+description: 五十音汉语联想记忆
 ---
 
 ## 平假名

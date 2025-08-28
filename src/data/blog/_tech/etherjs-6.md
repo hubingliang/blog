@@ -8,7 +8,7 @@ draft: false
 tags:
   - ethers.js
   - Solidity
-ogImage: ""
+ogImage: "@/assets/images/tech/yigit-ali-atasoy-6Jdz9qiZfsQ-unsplash.jpg"
 description: 本文对 ethers.js 更新版本 V6 的内容做简要总结
 ---
 

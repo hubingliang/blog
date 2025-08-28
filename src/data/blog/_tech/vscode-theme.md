@@ -9,7 +9,7 @@ tags:
   - Library
   - Front-end
   - VScode
-ogImage: ""
+ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1675679420/blog/16a30374038ac5db_tplv-t2oaga2asx-zoom-in-crop-mark_3024_0_0_0_auwz0t.webp"
 description: 我之前一直用 **One Dark Pro** 后来又转到 **Material Theme Palenight** 再到后来的 **Dracula** 。总觉得有些配色很奇怪（工作太闲），于是写了一个 VSCode 深色主题：
 ---
 

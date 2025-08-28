@@ -8,7 +8,7 @@ draft: false
 tags:
   - JavaScript
   - Front-end
-ogImage: ""
+ogImage: "@/assets/images/tech/sudharshan-tk-mM9vVJ2oDeI-unsplash.jpg"
 description: 类型检查在各种强类型语言（Typescript、Flow.js）出现之前一直是我们手动检查的，检查的方式也是多种多样。本文尽量总结出所有类型最优的检查方式，和解释所有方式的原理，如果有错误请各位大佬指正，除此之外对于类型检查当然拥抱强类型我觉得才是未来。
 ---
 

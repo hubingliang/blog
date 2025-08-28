@@ -7,7 +7,7 @@ featured: false
 draft: false
 tags:
   - HTTP
-ogImage: ""
+ogImage: "@/assets/images/tech/bady-abbas-NhrGfUalawQ-unsplash.jpg"
 description: 缓存是有空间的限制的，不同的情况下会采取不同的缓存淘汰策略应对缓存满载
 ---
 

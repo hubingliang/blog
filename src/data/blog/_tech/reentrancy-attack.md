@@ -1,5 +1,5 @@
 ---
-author: Flâneur
+author: Brian Hu
 pubDatetime: 2023-02-08T16:14:00Z
 title: 图解 Solidity 安全：重入攻击（reentrancy attack）
 postSlug: reentrancy-attack

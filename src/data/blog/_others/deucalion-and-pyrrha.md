@@ -6,7 +6,7 @@ featured: false
 draft: false
 tags:
   - Greek mythology
-ogImage: ""
+ogImage: "@/assets/images/Peter_Paul_Rubens_-_Deucalion_and_Pyrrha,_1636.jpg"
 description: 丢卡利翁和皮拉在宙斯发动的大洪水中幸存，并按照神谕指引通过抛掷石头重新创造了人类，成为新世界的始祖。
 ---
 

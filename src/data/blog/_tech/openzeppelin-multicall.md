@@ -1,5 +1,5 @@
 ---
-author: Flâneur
+author: Brian Hu
 pubDatetime: 2023-04-24T3:47:10Z
 title: OpenZeppelin Multicall 源码解读
 postSlug: openzeppelin-multicall
@@ -8,7 +8,7 @@ draft: false
 tags:
   - Solidity
   - OpenZeppelin
-ogImage: ""
+ogImage: "@/assets/images/tech/chris-ried-ieic5Tq8YMk-unsplash.jpg"
 description: 本文对 OpenZeppelin Multicall 的源码做简单解析，基于 OpenZeppelin v4.5.0 版本。
 ---
 

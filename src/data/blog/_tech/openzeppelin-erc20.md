@@ -1,5 +1,5 @@
 ---
-author: Flâneur
+author: Brian Hu
 pubDatetime: 2023-02-22T8:12:10Z
 title: OpenZeppelin ERC20 源码解读
 postSlug: openzeppelin-erc20
@@ -8,7 +8,7 @@ draft: false
 tags:
   - Solidity
   - OpenZeppelin
-ogImage: ""
+ogImage: "@/assets/images/tech/chris-ried-ieic5Tq8YMk-unsplash.jpg"
 description: 本文对 OpenZeppelin ERC20 的源码做简单解析，基于 OpenZeppelin v4.8.0 版本。
 ---
 

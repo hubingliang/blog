@@ -7,7 +7,7 @@ featured: false
 draft: false
 tags:
   - Solidity
-ogImage: ""
+ogImage: "@/assets/images/tech/chris-ried-ieic5Tq8YMk-unsplash.jpg"
 description: 如果在一些逻辑之后需要进行转移资金操作时通常是建议使用提款模式（withdrawal pattern）。
 ---
 

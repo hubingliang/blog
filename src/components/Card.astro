@@ -3,6 +3,7 @@ import { slugifyStr } from "@/utils/slugify";
 import type { CollectionEntry } from "astro:content";
 import { getPath } from "@/utils/getPath";
 import Datetime from "./Datetime.astro";
+import Tag from "./Tag.astro";
 
 export interface Props extends CollectionEntry<"blog"> {
   variant?: "h2" | "h3";
@@ -10,27 +11,76 @@ export interface Props extends CollectionEntry<"blog"> {
 
 const { variant = "h2", data, id, filePath } = Astro.props;
 
-const { title, description, pubDatetime, modDatetime, timezone } = data;
+const {
+  title,
+  description,
+  pubDatetime,
+  modDatetime,
+  timezone,
+  ogImage,
+  tags,
+} = data;
 
 const headerProps = {
   style: { viewTransitionName: slugifyStr(title) },
-  class: "text-lg font-medium decoration-dashed hover:underline",
+  class: "text-xl font-medium decoration-dashed hover:underline",
 };
 ---
 
-<li class="my-6">
-  <a
-    href={getPath(id, filePath)}
-    class="inline-block text-lg font-medium text-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+<li>
+  <article
+    class="group bg-skin-card flex h-full flex-col overflow-hidden rounded-lg transition-all duration-300"
   >
-    {
-      variant === "h2" ? (
-        <h2 {...headerProps}>{title}</h2>
-      ) : (
-        <h3 {...headerProps}>{title}</h3>
-      )
-    }
-  </a>
-  <Datetime {pubDatetime} {modDatetime} {timezone} />
-  <p>{description}</p>
+    <!-- 图片部分 -->
+    <div class="aspect-video overflow-hidden">
+      {
+        ogImage ? (
+          <a href={getPath(id, filePath)} class="block h-full w-full">
+            <img
+              src={typeof ogImage === "string" ? ogImage : ogImage.src}
+              alt={title}
+              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+          </a>
+        ) : (
+          <div class="bg-skin-muted flex h-full w-full items-center justify-center">
+            <span class="text-skin-muted">No Image</span>
+          </div>
+        )
+      }
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="flex flex-1 flex-col py-4">
+      <!-- 标题 -->
+      <a
+        href={getPath(id, filePath)}
+        class="mb-2 inline-block text-xl font-medium text-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+      >
+        {
+          variant === "h2" ? (
+            <h2 {...headerProps}>{title}</h2>
+          ) : (
+            <h3 {...headerProps}>{title}</h3>
+          )
+        }
+      </a>
+
+      <!-- 时间 -->
+      <div class="mb-2">
+        <Datetime {pubDatetime} {modDatetime} {timezone} />
+      </div>
+
+      <!-- 描述 -->
+      <p class="text-skin-base mb-4 line-clamp-3 flex-1 text-sm opacity-80">
+        {description}
+      </p>
+
+      <!-- 标签 -->
+      <div class="flex flex-wrap gap-1">
+        {tags.map(tag => <Tag tag={slugifyStr(tag)} tagName={tag} size="sm" />)}
+      </div>
+    </div>
+  </article>
 </li>

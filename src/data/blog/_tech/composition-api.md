@@ -9,7 +9,7 @@ tags:
   - JavaScript
   - Front-end
   - Vue
-ogImage: ""
+ogImage: "@/assets/images/tech/vue3.webp"
 description: 在这篇文章中，我会同时用常规 JavaScript 和 options API 以及 TypeScript 和 Composition API 写出两种不同风格的 Vue 3 组件，我们会从中看到两者的差异以及一些可能被忽视的优点。
 ---
 
