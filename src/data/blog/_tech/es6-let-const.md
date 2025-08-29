@@ -8,7 +8,7 @@ draft: false
 tags:
   - JavaScript
   - Front-end
-ogImage: ""
+ogImage: "@/assets/images/tech/joan-gamell-XmZ4GDAp9G0-unsplash.jpg"
 description: ES6 在原有两种声明变量命令（var和function）的基础上，又加入了一共四种声明变量的命令let const import class，本文先对let和const的用法进行说明。
 ---
 
@@ -167,7 +167,7 @@ a = 2;
 const 所声明的常量不能改变，所以声明和赋值的过程必须同时进行。
 
 ```js
-const a
+const a;
 // 报错
 ```
 

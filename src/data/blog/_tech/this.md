@@ -8,7 +8,7 @@ draft: false
 tags:
   - JavaScript
   - Front-end
-ogImage: ""
+ogImage: "@/assets/images/tech/brendan-church-pKeF6Tt3c08-unsplash.jpg"
 description: 老生常谈的问题了，之前一直有些模糊，这次争取一次写清楚。
 ---
 

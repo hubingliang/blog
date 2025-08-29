@@ -8,7 +8,7 @@ draft: false
 tags:
   - JavaScript
   - Front-end
-ogImage: ""
+ogImage: "@/assets/images/tech/sudharshan-tk-mM9vVJ2oDeI-unsplash.jpg"
 description: 什么是事件委托?用个例子就可以很简单的解释事件委托是怎么一回事了：
 ---
 

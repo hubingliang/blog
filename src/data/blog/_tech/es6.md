@@ -8,7 +8,7 @@ draft: false
 tags:
   - JavaScript
   - Front-end
-ogImage: ""
+ogImage: "@/assets/images/tech/growtika-qaedPly-Uro-unsplash.jpg"
 description: 声明变量的新姿势
 ---
 

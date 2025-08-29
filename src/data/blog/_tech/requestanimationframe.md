@@ -8,7 +8,7 @@ draft: false
 tags:
   - JavaScript
   - Front-end
-ogImage: ""
+ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1675676273/blog/1637ddf84e9110d6_tplv-t2oaga2asx-zoom-in-crop-mark_3024_0_0_0_brituv.webp"
 description: 在实际项目中我们经常会遇到生成动画的需求，传统方法是通过使用setTimeout和setInterval进行实现，但是定时器动画有两个弊端
 ---
 

@@ -8,7 +8,7 @@ draft: false
 tags:
   - JavaScript
   - Front-end
-ogImage: ""
+ogImage: "@/assets/images/tech/markus-spiske-cvBBO4PzWPg-unsplash.jpg"
 description: 我们生成两个构造函数，后面的例子都是让‘’猫‘’继承‘’动物‘’的所有属性和方法。
 ---
 

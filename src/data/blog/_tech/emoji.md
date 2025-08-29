@@ -8,7 +8,7 @@ draft: false
 tags:
   - Library
   - Front-end
-ogImage: ""
+ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1675675180/blog/4337988-ef3ae78893a558c3.png_llucms.png"
 description: 最近在做我们学校的表白墙网站，在做到评论功能的时候自然而然就想到了emoji-😏
 ---
 

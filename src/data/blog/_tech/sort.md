@@ -7,7 +7,7 @@ featured: false
 draft: false
 tags:
   - Arithmetic
-ogImage: ""
+ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1675676959/blog/4337988-51788201338ecebb.png_ftqf8h.png"
 description: 高德纳在《计算机程序设计艺术》里对算法归纳为以下几点：
 ---
 

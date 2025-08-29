@@ -8,8 +8,8 @@ draft: false
 tags:
   - JavaScript
   - Front-end
-ogImage: ""
-description: 为了防止网站被 XSS、CSRF 攻击，Netscape 公司在 1995 年引入同源策略/SOP(Same origin policy),它是指“协议+域名+端口”三者相同
+ogImage: "@/assets/images/tech/nick-fewings-zF_pTLx_Dkg-unsplash.jpg"
+description: 箭头函数可能是 ES6 最有特点的新特性了，它不仅可以让代码变得优美，而且更直观利于理解。
 ---
 
 ## 基本用法

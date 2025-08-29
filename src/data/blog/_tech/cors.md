@@ -8,7 +8,7 @@ draft: false
 tags:
   - HTTP
   - Front-end
-ogImage: ""
+ogImage: "@/assets/images/tech/markus-spiske-iar-afB0QQw-unsplash.jpg"
 description: 为了防止网站被 XSS、CSRF 攻击，Netscape 公司在 1995 年引入同源策略/SOP(Same origin policy),它是指“协议+域名+端口”三者相同
 ---
 

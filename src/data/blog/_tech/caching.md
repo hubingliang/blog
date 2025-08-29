@@ -7,7 +7,7 @@ featured: false
 draft: false
 tags:
   - HTTP
-ogImage: ""
+ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1675673300/blog/4337988-2f83dd324ca06c63.png_zw6s3t.png"
 description: 所以讲缓存为什么要先扯代理服务器？别急，让我们看一下一个请求的简单示意图。
 ---
 

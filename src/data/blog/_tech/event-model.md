@@ -8,7 +8,7 @@ draft: false
 tags:
   - JavaScript
   - Front-end
-ogImage: ""
+ogImage: "@/assets/images/tech/wilhelm-gunkel-y4Yf84W-DKc-unsplash.jpg"
 description: 面试中有时候会提到事件模型的概念，平时云里雾里的，所以找个机会总结一下，并不是很复杂的东西。
 ---
 

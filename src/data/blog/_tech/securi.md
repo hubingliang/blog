@@ -7,7 +7,7 @@ featured: false
 draft: false
 tags:
   - HTTP
-ogImage: ""
+ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1675676448/blog/4337988-3b2645de43c3de0c.png_bbmtjo.png"
 description: 目前，互联网攻击大多是针对应用HTTP协议的服务器和客户端，以及运行在服务器上的Web应用等资源，本文主要针对Web应用的攻击技术进行简单分析。
 ---
 

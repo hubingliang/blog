@@ -7,7 +7,7 @@ featured: false
 draft: false
 tags:
   - HTTP
-ogImage: ""
+ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1675674551/blog/4337988-87d0773cc92023ac.png_qopxhf.png"
 description: HTTP是无状态协议，说明它不能以状态来区分和管理请求和响应。也就是说，无法根据之前的状态进行本次的请求处理。
 ---
 

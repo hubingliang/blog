@@ -8,7 +8,7 @@ draft: false
 tags:
   - JavaScript
   - Front-end
-ogImage: ""
+ogImage: "@/assets/images/tech/freestocks-I_pOqP6kCOI-unsplash.jpg"
 description: 浅拷贝： 只能对基本类型的值拷贝，如果所要拷贝的对象的某个属性的值是对象的话，那么目标对象拷贝得到的是这个对象的引用。
 ---
 

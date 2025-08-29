@@ -7,7 +7,7 @@ featured: false
 draft: false
 tags:
   - CSS
-ogImage: ""
+ogImage: "@/assets/images/tech/kobu-agency-ipARHaxETRk-unsplash.jpg"
 description: 图片被添加了float:left属性,实现了文字环绕效果.但是再给div加了border之后,我们发现图片并没有被包起来,也就是图片浮上来了一层,那么怎么解决这种情况,包住图片呢?
 ---
 
