@@ -7,8 +7,6 @@ featured: true
 draft: false
 tags:
   - Solidity
-  - security
-  - Hack
 ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1675828572/blog/canary/%E6%97%A0%E6%A0%87%E9%A2%98-2023-01-29-1431_s4awrl.png"
 description: 重入攻击是指恶意合约在对目标合约的提款调用执行过程中，不等执行结束再通过调用该合约的函数对其进行二次攻击，从而破坏原本的执行流程，达到攻击目的的技术。
 ---

@@ -79,7 +79,7 @@ const headerProps = {
 
       <!-- 标签 -->
       <div class="flex flex-wrap gap-1">
-        {tags.map(tag => <Tag tag={slugifyStr(tag)} tagName={tag} size="sm" />)}
+        {tags.map((tag, index) => <Tag tag={slugifyStr(tag)} tagName={tag} size="sm" index={index} />)}
       </div>
     </div>
   </article>

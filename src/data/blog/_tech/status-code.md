@@ -8,7 +8,7 @@ draft: false
 tags:
   - HTTP
   - Front-end
-ogImage: ""
+ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1675677761/blog/4337988-58f1c4215d05ea95.png_kvuilw.png"
 description: 当我们向服务端发送请求的时候，为了让用户更好的理解返回结果，通常要借助状态码来通知用户服务器端是正常处理了请求，还是出现了偏差。
 ---
 

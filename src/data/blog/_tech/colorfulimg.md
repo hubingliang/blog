@@ -7,7 +7,7 @@ featured: false
 draft: false
 tags:
   - Front-end
-ogImage: ""
+ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1675674464/blog/165c960c72a38dae_tplv-t2oaga2asx-zoom-in-crop-mark_3024_0_0_0_uukfjz.webp"
 description: 前几天遇到了获取图片主题色的需求，于是去找了一些相关的博客，发现实现起来相当简单，于是自己开发了一个获取图片主题色的网站
 ---
 

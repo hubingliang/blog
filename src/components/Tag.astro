@@ -5,15 +5,19 @@ export interface Props {
   tag: string;
   tagName: string;
   size?: "sm" | "lg";
+  index?: number; // 添加索引用于生成唯一的transition name
 }
 
-const { tag, tagName, size = "sm" } = Astro.props;
+const { tag, tagName, size = "sm", index } = Astro.props;
+
+// 生成唯一的transition name，避免重复
+const transitionName = index !== undefined ? `${tag}-${index}` : `${tag}-${Math.random().toString(36).substr(2, 9)}`;
 ---
 
 <li class:list={["group inline-block", size === "sm" ? "m-1" : "m-1.5"]}>
   <a
     href={`/tags/${tag}/`}
-    transition:name={tag}
+    transition:name={transitionName}
     class:list={[
       "relative inline-flex items-center gap-1.5 rounded-full px-3 py-1.5",
       "bg-gradient-to-r from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-700",

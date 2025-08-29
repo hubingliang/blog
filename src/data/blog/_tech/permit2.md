@@ -7,8 +7,6 @@ featured: true
 draft: false
 tags:
   - Solidity
-  - Uniswap
-  - EIP
 ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1679901132/blog/canary/%E6%97%A0%E6%A0%87%E9%A2%98-2023-03-27-1504_biwerw.png"
 description: 本文对以太坊授权机制做简单解析。
 ---

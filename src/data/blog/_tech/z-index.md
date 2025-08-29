@@ -7,7 +7,7 @@ featured: false
 draft: false
 tags:
   - CSS
-ogImage: ""
+ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1675680091/blog/4337988-da32ea3f63d9b3c2.png_xtgtmg.png"
 description: Z-index 的运用是需要条件的,与其相关的属性就是 position 属性。我们以三个 div 来举例子。
 ---
 

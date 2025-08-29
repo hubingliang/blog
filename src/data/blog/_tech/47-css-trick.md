@@ -8,7 +8,7 @@ draft: false
 tags:
   - CSS
   - Front-end
-ogImage: ""
+ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1675672536/blog/4337988-e5572657637e9e85.png_pozqbu.png"
 description:
   两周时间收益匪浅，学习了很多 CSS 技巧，感觉打开了新世界的大门，在看到一半的时候感觉还是自己实现一边印象比较深刻。于是自己把 47 个 CSS 技巧全部实现了一遍
 ---

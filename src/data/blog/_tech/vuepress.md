@@ -6,9 +6,9 @@ postSlug: Hexo 已经看腻了，来试试 VuePress 搭建个人博客
 featured: false
 draft: false
 tags:
-  - VuePress
+  -  Vue
   - Front-end
-ogImage: ""
+ogImage: "https://res.cloudinary.com/dewu7okpv/image/upload/v1675679827/blog/4337988-0a3fba115006a7ca.png_honlej.webp"
 description: 先简单介绍一下VuePress，这是尤大在2018年4月份发布的一个新轮子。
 ---
 
@@ -152,27 +152,23 @@ $codeBgColor = #282c34 // 代码背景颜色
 ```js
 sidebar: [
   {
-    title: 'JavaScript', // 侧边栏名称
+    title: "JavaScript", // 侧边栏名称
     collapsable: true, // 可折叠
     children: [
-      '/blog/JavaScript/学会了ES6，就不会写出那样的代码', // 你的md文件地址
-    ]
+      "/blog/JavaScript/学会了ES6，就不会写出那样的代码", // 你的md文件地址
+    ],
   },
   {
-    title: 'CSS',
+    title: "CSS",
     collapsable: true,
-    children: [
-      '/blog/CSS/搞懂Z-index的所有细节',
-    ]
+    children: ["/blog/CSS/搞懂Z-index的所有细节"],
   },
   {
-    title: 'HTTP',
+    title: "HTTP",
     collapsable: true,
-    children: [
-      '/blog/HTTP/认识HTTP-Cookie和Session篇',
-    ]
+    children: ["/blog/HTTP/认识HTTP-Cookie和Session篇"],
   },
-]
+];
 ```
 
 对应的文档结构：
